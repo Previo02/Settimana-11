@@ -47,7 +47,7 @@ namespace Properties
             // TODO understand string format convention
             Console.WriteLine("The {1} deck has {0} cards: ", df.GetDeckSize(), "italian");
 
-            foreach (Card c in df.GetDeck())
+            foreach (Card c in df.Deck)
             {
                 Console.WriteLine(c);
             }
