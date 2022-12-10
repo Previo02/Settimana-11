@@ -55,5 +55,6 @@ namespace Indexers
         /// <param name="keys2">all the column keys.</param>
         /// <param name="generator">the bifunction that generates the value given the couple of keys.</param>
         void Fill(IEnumerable<TKey1> keys1, IEnumerable<TKey2> keys2, Func<TKey1, TKey2, TValue> generator);
+        
     }
 }
