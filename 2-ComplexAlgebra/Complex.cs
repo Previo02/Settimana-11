@@ -41,6 +41,6 @@ namespace ComplexAlgebra
 
         public new bool Equals(object obj) => obj is Complex complex && Real == complex.Real && Imaginary == complex.Imaginary;
 
-        public override string ToString() => Real + (Imaginary >= 0 ? "+" + Imaginary : Imaginary + "i");
+        public override string ToString() => (Real != 0 ? Real : "") + (Imaginary != 0 ? (Imaginary != 1 ? Imaginary : "") + "i" : "");
     }
 }
